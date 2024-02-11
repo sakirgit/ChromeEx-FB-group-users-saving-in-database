@@ -1,0 +1,76 @@
+
+
+.translated_text{
+  background-color: yellow;
+  color: #000;
+  display: block;
+  padding: 5px;
+}
+/* CSS for loading effect */
+.loading {
+  position: relative;
+}
+
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.rep_loading{
+  display: none;
+  animation: spin 500ms linear infinite;
+  position: absolute;
+  font-weight: bolder;
+  padding: 0;
+  background: #000;
+
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+.selectable-text.selectable-text {
+  position: relative;
+}
+
+.selectable-text.selectable-text .ai_tooltip{
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  background: #005c4b;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 99999;
+  display: none;
+  color: #fff;
+}
+.message-in:hover .ai_tooltip{
+  display: block;
+}
+
+.ai_tooltip .transl_button:hover,
+.ai_tooltip .rep_button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}

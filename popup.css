@@ -1,0 +1,13 @@
+body{
+  width: 300px;
+  padding: 16px 19px 19px;
+  background-color: #00a884;
+  color: #fff;
+}
+table{
+  width: 100%;  
+}
+table, th, td {
+  border: 0;
+}
+ 
